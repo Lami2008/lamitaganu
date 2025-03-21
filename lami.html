@@ -13,7 +13,7 @@ box-sizing:border-box;
 }
 body{
 font-family:outfit;
-background:linear-gradient(#ffdad5,#fff7f9);
+background:silver;
 }
 .contact-container{
 height:100vh;
@@ -74,6 +74,11 @@ border-radius:50px;
 background:linear-gradient(270deg,#ff994f,#fa6d86);
 cursor:pointer;
 }
+  h1{
+text-align:center;
+margin-top:20px;
+color:slateblue;
+  }
 @media(max-width:800px){
 .contact-inputs{
 width:80vw;
@@ -82,12 +87,14 @@ width:80vw;
 </style>
   </head>
   <body>
+    <h1>Contact with Lamisha Taganu</h1>
     <div class="contact-container">
-      <form action="" class="contact-left">
+      <form action="https://api.web3forms.com/submit" method="post" class="contact-left">
       <div class="contact-left-title">
         <h2>Get in touch</h2>
         <hr>
       </div>
+         <input type="hidden" name="access-key" value="3edd43dc-12c6-48ff-9a6c-48abe31c4540">
         <input type="text" name="name" placeholder="your name" class="contact-inputs" required>
          <input type="email" name="email" placeholder="your email" class="contact-inputs" required>
         <textarea name="message" placeholder="your message" class="contact-inputs" required></textarea>
